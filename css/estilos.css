@@ -76,6 +76,14 @@ main {
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   border: none;
 }
+@media (max-width: 480px) {
+  .download-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
 
 .download-btn:hover {
   background-color: #e03c4c;
