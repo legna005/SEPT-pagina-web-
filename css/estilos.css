@@ -1,3 +1,5 @@
+/* estilos.css */
+
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #e3f2dc, #d4eac0);
@@ -35,20 +37,25 @@ main {
 
 .download-btn {
   display: block;
-  width: 100%;
-  text-align: center;
-  background-color: #00796b;
+  width: 300px; /* Tamaño fijo */
+  height: 60px; /* Altura fija */
+  background-color: #4CAF50;
   color: white;
-  padding: 1rem;
+  padding: 0;
+  line-height: 60px; /* Centra verticalmente el texto */
+  text-align: center;
   text-decoration: none;
   border-radius: 8px;
-  margin-top: 1rem;
   font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1rem auto; /* Centrado horizontal */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease;
+  border: none;
 }
 
 .download-btn:hover {
-  background-color: #005a4f;
+  background-color: #388E3C;
 }
 
 .install-guide {
@@ -78,7 +85,7 @@ footer {
   }
 
   .download-btn {
-    font-size: 1rem;
-    padding: 1rem;
+    width: 100%;
+    text-align: center;
   }
 }
