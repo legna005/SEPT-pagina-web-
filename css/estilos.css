@@ -43,7 +43,6 @@ header p {
   margin-bottom: 1rem;
 }
 
-
 @keyframes fadeInLogo {
   from {
     opacity: 0;
@@ -54,9 +53,6 @@ header p {
     transform: scale(1);
   }
 }
-
-
-
 
 main {
   display: flex;
@@ -73,7 +69,6 @@ main {
   max-width: 500px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1s ease-out;
   border: 2px solid #4CAF50;
   box-shadow: 0 0 15px #4CAF50;
@@ -96,6 +91,7 @@ main {
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   border: none;
 }
+
 @media (max-width: 480px) {
   .download-btn {
     width: 100%;
@@ -103,7 +99,6 @@ main {
     padding: 0.6rem 1.2rem;
   }
 }
-
 
 .download-btn:hover {
   background-color: #37df45;
@@ -136,17 +131,19 @@ main {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05); /* Fondo semi-transparente */
   border-radius: 12px;
   padding: 1.5rem;
   max-width: 300px;
   color: white;
-  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
-  transition: transform 0.3s ease;
+  border: 2px solid #329c28; /* Contorno verde */
+  box-shadow: 0 0 12px #329c28; /* Sombra verde suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px #37df45; /* Sombra más brillante al hacer hover */
 }
 
 .card img {
@@ -158,14 +155,14 @@ main {
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #4CAF50;
+  color: #4CAF50; /* Verde para título */
 }
 
-.card p {
-  font-size: 0.95rem;
-  color: #ddd;
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #4CAF50; /* Verde para título */
 }
-
 footer {
   text-align: center;
   padding: 1rem;
