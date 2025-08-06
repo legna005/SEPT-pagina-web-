@@ -22,8 +22,8 @@ body {
 header {
   text-align: center;
   padding: 3rem 1rem;
-  border-top: 6px solid  #c5c9be;
-  box-shadow: 0 -2px 15px  #c5c9be;
+  border-top: 6px solid  #4CAF50;
+  box-shadow: 0 -2px 15px  #4CAF50;
   animation: borderFade 1s ease-out;
 }
 
@@ -158,11 +158,12 @@ main {
   color: #4CAF50; /* Verde para título */
 }
 
-.card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #4CAF50; /* Verde para título */
+
+.card p {
+  font-size: 0.95rem;
+  color: #ddd;
 }
+
 footer {
   text-align: center;
   padding: 1rem;
