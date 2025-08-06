@@ -11,7 +11,7 @@ body {
 }
 
 .background-overlay {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(107, 107, 107, 0.75);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,21 +22,41 @@ body {
 header {
   text-align: center;
   padding: 3rem 1rem;
-  border-top: 6px solid #4CAF50;
-  box-shadow: 0 -2px 15px #4CAF50;
+  border-top: 6px solid  #c5c9be;
+  box-shadow: 0 -2px 15px  #c5c9be;
   animation: borderFade 1s ease-out;
 }
 
 header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem; 
+  margin-bottom: 0.3rem;
   letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.3rem;
+  font-size: 1rem; 
   color: #e0e0e0;
 }
+
+.logo-setp {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
 
 main {
   display: flex;
@@ -63,7 +83,7 @@ main {
   display: block;
   width: 300px;
   height: 60px;
-  background-color: #ff4655;
+  background-color:  #329c28 ;
   color: white;
   line-height: 60px;
   text-align: center;
@@ -72,7 +92,7 @@ main {
   font-weight: bold;
   font-size: 1.1rem;
   margin: 1rem auto;
-  box-shadow: 0 0 15px #ff4655;
+  box-shadow: 0 0 15px #329c28 ;
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   border: none;
 }
@@ -86,8 +106,8 @@ main {
 
 
 .download-btn:hover {
-  background-color: #e03c4c;
-  box-shadow: 0 0 25px #ff4655;
+  background-color: #37df45;
+  box-shadow: 0 0 25px #a0faa8;
 }
 
 .install-guide {
@@ -98,7 +118,6 @@ main {
 }
 
 .info-section {
-  background-color: rgba(0, 0, 0, 0.85);
   padding: 4rem 2rem;
   text-align: center;
 }
