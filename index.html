@@ -9,10 +9,10 @@
 <body>
   <div class="background-overlay">
     <header>
-  <img src="img/verdev.png" alt="Logo SETP" class="logo-setp">
-  <h1>Salud en tu puerta (SETP)</h1>
-  <p>Tu acceso al comercio orgánico sostenible</p>
-</header>
+      <img src="img/verdev.png" alt="Logo SETP" class="logo-setp">
+      <h1>Salud en tu puerta (SETP)</h1>
+      <p>Tu acceso al comercio orgánico sostenible</p>
+    </header>
 
     <main>
       <section class="apk-download">
@@ -50,31 +50,96 @@
         </div>
       </div>
     </section>
+
     <section class="info-section">
       <h2>Manuales de usuario</h2>
       <div class="info-cards">
         <div class="card">
-          <img src="img/usuario.jpg" alt="Manual de usuario">
+          <img src="img/usuario.png" alt="Manual de usuario">
           <h3>Manual de usuario</h3>
           <p>Apoya la economía sostenible y recibe productos frescos directamente en tu puerta.</p>
         </div>
         <div class="card">
-          <img src="img/repartidor.jpg" alt="Manual de repartidor">
+          <img src="img/repartidor.png" alt="Manual de repartidor">
           <h3>Manual de repartidor</h3>
           <p>Accede a un sistema confiable con autenticación biométrica y diseño responsivo.</p>
         </div>
         <div class="card">
-          <img src="img/vendedor.jpg" alt="Manual de vendedor">
+          <img src="img/vendedor.png" alt="Manual de vendedor">
           <h3>Manual de Vendedor</h3>
           <p>Únete a una red de consumidores conscientes y transforma tu forma de comprar.</p>
         </div>
       </div>
-        </section>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 Salud en tu puerta (SETP)</p>
-    </footer>
+    <!-- Botón flotante -->
+    <div class="barra-privacidad">
+      <button class="btn-privacidad" onclick="abrirModal()">Términos de Privacidad</button>
+    </div>
+
+    <!-- Modal bloqueante -->
+    <div id="modalPrivacidad" class="modal">
+      <div class="modal-contenido">
+        <h2>POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES</h2>
+        <p><strong>Última actualización:</strong> 17/07/2025</p>
+        <p>
+          <!-- Aquí va todo tu texto de políticas -->
+          POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES
+Última actualización: 17/07/2025
+Esta política aplica a los datos personales recabados por la aplicación móvil desarrollada como plataforma de venta y entrega de productos orgánicos en el municipio de Colinas del Lago, Cuautitlán Izcalli, Estado de México. El uso de esta plataforma implica la aceptación por parte de sus actores: Usuario, Vendedor y Repartidor, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP).
+Los datos proporcionados por el usuario, serán utilizados con el fin de mejorar la aplicación, estos no serán expuestos ni distribuidos sin la autorización del usuario/vendedor 
+Responsable del tratamiento
+El responsable de la protección de datos personales es SETP, con domicilio en Dirección: Calle Sol Naciente #128,Colonia: Villa Dorada, Municipio: Cuautitlán,
+Estado: Estado de México C.P.: 54800  y contacto en el correo electrónico SETP2214@gmail.com. El responsable se compromete a velar por la privacidad de los datos conforme a los principios de legalidad, consentimiento informado, calidad, seguridad y confidencialidad.
+Actores y datos recopilados
+Usuario: Consumidor registrado que realiza pedidos. Se recopilan nombre completo, número de contacto, dirección de entrega, geolocalización, historial de compras, evidencias multimedia de calificación (fotos/videos) y método de pago (Mercado Pago o efectivo).
+Vendedor: Comerciante o productor que publica y administra productos en la aplicación. Se recopilan nombre completo o razón social, ubicación del comercio, contacto telefónico, correo electrónico comercial, y documento de identificación para verificación del perfil.
+Repartidor: Persona encargada de realizar entregas. Se recopilan nombre, teléfono, geolocalización en tiempo real, identificación oficial y estadísticas de entregas completadas.
+Finalidades del tratamiento
+La información recopilada tiene como objetivo facilitar operaciones comerciales entre Usuario y Vendedor, asignar entregas a Repartidores, optimizar rutas utilizando Google Maps, emitir notificaciones de estado de pedidos, garantizar la seguridad de las transacciones y permitir calificaciones sobre productos y entregas.
+De manera opcional, se podrá usar la información para mejorar el servicio mediante estudios de mercado, promociones personalizadas y análisis estadísticos de uso.
+Tecnologías utilizadas
+La app utiliza geolocalización, integración con Google Maps, notificaciones en tiempo real y almacenamiento en Firebase. No se guarda información financiera; solo se conecta con plataformas como Mercado Pago para la gestión de pagos.
+Limitación de operación y responsabilidad
+La operación de la aplicación se limita geográficamente a Colinas del Lago. No se gestionan entregas fuera de esa zona. El sistema requiere Android 8.0 o superior, conexión a internet estable y no se responsabiliza de la calidad o disponibilidad de los productos publicados por terceros.
+Derechos ARCO
+Los titulares pueden ejercer sus derechos de acceso, rectificación, cancelación y oposición (ARCO) enviando una solicitud al correo [Email]. La solicitud debe incluir identificación oficial y descripción clara del derecho que desea ejercer.
+Seguridad de los datos
+El sistema implementa medidas físicas, técnicas y administrativas de seguridad para evitar alteraciones, pérdidas, accesos no autorizados y usos indebidos. La infraestructura en Firebase se encuentra cifrada y respaldada automáticamente.
+Transferencia de datos
+Los datos personales no serán compartidos con terceros sin consentimiento explícito, excepto por requerimiento de autoridad competente o mandato legal.
+Cambios en la política
+Esta política podrá actualizarse periódicamente conforme a mejoras del sistema, cambios legales o nuevas funcionalidades. Se notificará a los usuarios mediante la aplicación antes de su entrada en vigor.
+La aplicación no se ara responsable de los actos ilícitos que se puedan realizar por parte del usuario, vendedor y/o repartidor, los actos quedan estrictamente en la responsabilidad de los usuarios que utilicen la aplicación y las legislaciones aplicables serán de acuerdo a la zona geográfica donde se encuentra ubicada su localización 
+La aplicación SETP no se hace responsable por el estado de los productos, esta es responsabilidad del vendedor o distribuidor
+        </p>
+        <button class="btn-aceptar" onclick="cerrarModal()">ACEPTAR</button>
+      </div>
+    </div>
   </div>
+
+  <script>
+    // Mostrar el modal automáticamente al cargar
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.getElementById("modalPrivacidad");
+      modal.style.display = "flex";
+    });
+
+    // Función para abrir el modal desde el botón flotante
+    function abrirModal() {
+      document.getElementById("modalPrivacidad").style.display = "flex";
+    }
+
+    // Función para cerrar el modal solo al presionar "ACEPTAR"
+    function cerrarModal() {
+      document.getElementById("modalPrivacidad").style.display = "none";
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Salud en tu puerta (SETP)</p>
+  </footer>
 </body>
 </html>
+
 
