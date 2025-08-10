@@ -22,19 +22,19 @@ body {
 header {
   text-align: center;
   padding: 3rem 1rem;
-  border-top: 6px solid  #4CAF50;
-  box-shadow: 0 -2px 15px  #4CAF50;
+  border-top: 6px solid #4CAF50;
+  box-shadow: 0 -2px 15px #4CAF50;
   animation: borderFade 1s ease-out;
 }
 
 header h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
   margin-bottom: 0.3rem;
   letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1rem; 
+  font-size: 1rem;
   color: #e0e0e0;
 }
 
@@ -74,7 +74,6 @@ main {
   box-shadow: 0 0 15px #4CAF50;
 }
 
-/* NUEVO: Contenedor del QR */
 .qr-container {
   background-color: rgba(76, 175, 80, 0.2);
   padding: 1rem;
@@ -84,7 +83,6 @@ main {
   box-shadow: 0 0 10px #4CAF50;
 }
 
-/* NUEVO: Imagen del QR */
 .qr-container img {
   width: 100%;
   height: auto;
@@ -96,7 +94,6 @@ main {
   display: block;
   width: 100%;
   max-width: 300px;
-  height: auto;
   background-color: #329c28;
   color: white;
   text-align: center;
@@ -185,7 +182,6 @@ main {
   text-justify: inter-word;
 }
 
-/* Footer con botón de privacidad */
 footer {
   text-align: center;
   padding: 1rem;
@@ -214,8 +210,25 @@ footer {
 .btn-privacidad:hover {
   background-color: #37df45;
 }
+.setp-cuadro {
+  border: 2px solid #4CAF50; /* borde verde fuerte */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: justify;
+  background-color: transparent; /* fondo transparente */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra ligera */
+}
 
-/* Modal */
+.setp-titulo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #4CAF50; /* texto verde */
+}
+
+
 .modal {
   display: none;
   position: fixed;
@@ -244,7 +257,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* Scroll personalizado */
 .modal-contenido::-webkit-scrollbar {
   width: 6px;
 }
@@ -273,6 +285,7 @@ footer {
 .btn-aceptar:hover {
   background-color: #37df45;
 }
+
 .manual {
   color: rgb(153, 153, 153);
   text-decoration: none;
@@ -282,7 +295,70 @@ footer {
 }
 
 .manual:visited {
-  color: #ffffff; /* gris claro */
+  color: #ffffff;
+}
+
+/* ✅ Panel lateral con animación suave */
+.sidebar-nav {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgba(0, 123, 255, 0.1);
+  padding: 1em;
+  border-radius: 8px;
+  z-index: 1000;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+
+.nav-title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #007bff;
+}
+
+.nav-btn {
+  display: block;
+  padding: 0.8em 1em;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+}
+
+.integrantes {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #4CAF50;
+  box-shadow: 0 0 15px #4CAF50;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.integrantes h2 {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.integrantes h3 {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 0.5rem 0;
+  font-weight: normal;
 }
 
 
@@ -299,12 +375,4 @@ footer {
 }
 
 @keyframes borderFade {
-  from {
-    border-top-color: transparent;
-    box-shadow: 0 -2px 0 transparent;
-  }
-  to {
-    border-top-color: #4CAF50;
-    box-shadow: 0 -2px 15px #4CAF50;
-  }
 }
